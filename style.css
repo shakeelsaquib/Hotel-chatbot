@@ -1,0 +1,53 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(to right, #0066cc, #00ccff);
+  color: white;
+  padding: 3rem;
+}
+
+.btn {
+  background: white;
+  color: #0066cc;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.nav {
+  background: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+.room-card {
+  background: #fff;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 400px;
+}

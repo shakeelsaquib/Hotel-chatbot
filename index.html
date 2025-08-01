@@ -1,134 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Hotel Bliss</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Welcome to Hotel Bliss</h1>
+    <p>Your comfort is our priority. Book your stay now!</p>
+    <a href="#rooms" class="btn">Explore Rooms</a>
+  </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-overlay">
-      <h1 class="hotel-name">Hotel Bliss</h1>
-      <p class="tagline">Luxury, comfort, and unforgettable experiences await you.</p>
-      <a href="#rooms" class="cta-btn">Explore Rooms</a>
-
-      <!-- SEARCH FORM -->
-      <form class="search-form" action="#rooms">
-        <input type="text" placeholder="Search room type..." />
-        <button type="submit">Search</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- NAVIGATION BAR -->
-  <nav>
-    <ul>
-      <li><a href="#rooms">Rooms</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#booking">Booking</a></li>
-      <li><a href="#partners">Partners</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#rooms">Rooms</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- ROOMS SECTION -->
-  <section id="rooms" class="rooms">
+  <!-- Rooms Section -->
+  <section id="rooms">
     <h2>Our Rooms</h2>
-    <div class="room-card">
-      <img src="https://source.unsplash.com/300x200/?hotel-room" alt="Room 1" />
-      <h3>Deluxe Room</h3>
-    </div>
-    <div class="room-card">
-      <img src="https://source.unsplash.com/300x200/?luxury-room" alt="Room 2" />
-      <h3>Luxury Suite</h3>
-    </div>
-    <div class="room-card">
-      <img src="https://source.unsplash.com/300x200/?resort-room" alt="Room 3" />
-      <h3>Presidential Suite</h3>
+    <div class="room-gallery">
+      <div class="room-card">
+        <img src="https://source.unsplash.com/300x200/?hotel,room" alt="Deluxe Room">
+        <h3>Deluxe Room</h3>
+      </div>
+      <div class="room-card">
+        <img src="https://source.unsplash.com/300x200/?suite" alt="Suite">
+        <h3>Suite</h3>
+      </div>
+      <div class="room-card">
+        <img src="https://source.unsplash.com/300x200/?bedroom" alt="Standard Room">
+        <h3>Standard Room</h3>
+      </div>
     </div>
   </section>
 
-  <!-- SERVICES SECTION -->
-  <section id="services" class="services">
+  <!-- Partner Hotels Section -->
+  <section id="partner-hotels">
+    <h2>Our Partner Hotels</h2>
+    <div class="hotel-logos">
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Taj_Hotels_logo.svg" alt="Taj Hotels">
+        <h3>Taj Hotels</h3>
+        <a href="https://www.tajhotels.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Marriott_International_logo.svg/2560px-Marriott_International_logo.svg.png" alt="Marriott">
+        <h3>Marriott</h3>
+        <a href="https://www.marriott.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Hyatt_logo.svg" alt="Hyatt">
+        <h3>Hyatt</h3>
+        <a href="https://www.hyatt.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Radisson_Hotel_Group_logo.svg" alt="Radisson">
+        <h3>Radisson</h3>
+        <a href="https://www.radissonhotels.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/ITC_Hotels_logo.svg/2560px-ITC_Hotels_logo.svg.png" alt="ITC Hotels">
+        <h3>ITC Hotels</h3>
+        <a href="https://www.itchotels.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
     <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service">
-        <h3>Spa & Wellness</h3>
-        <p>Relax and rejuvenate with our world-class spa treatments.</p>
-      </div>
-      <div class="service">
-        <h3>Restaurant & Dining</h3>
-        <p>Enjoy gourmet meals from our multi-cuisine restaurant.</p>
-      </div>
-      <div class="service">
-        <h3>24/7 Room Service</h3>
-        <p>Call anytime for in-room dining or support.</p>
-      </div>
-    </div>
+    <ul class="service-list">
+      <li>🛎️ 24/7 Room Service</li>
+      <li>📶 Free High-Speed Wi-Fi</li>
+      <li>🚖 Airport Pickup & Drop</li>
+      <li>🧺 Laundry Service</li>
+      <li>💆 Spa & Wellness Center</li>
+    </ul>
   </section>
 
-  <!-- BOOKING FORM -->
-  <section id="booking" class="booking-form">
-    <h2>Book Your Stay</h2>
-    <form>
-      <input type="text" placeholder="Full Name" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="date" placeholder="Check-in" required />
-      <input type="date" placeholder="Check-out" required />
-      <select required>
-        <option value="">Select Room Type</option>
-        <option value="deluxe">Deluxe Room</option>
-        <option value="luxury">Luxury Suite</option>
-        <option value="presidential">Presidential Suite</option>
-      </select>
-      <button type="submit">Book Now</button>
-    </form>
-  </section>
-
-  <!-- PARTNER COMPANIES -->
-  <section id="partners" class="partners">
-    <h2>Book from Trusted Partners</h2>
-    <div class="partners-grid">
-      <a href="https://www.booking.com" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Booking.com_logo.svg" alt="Booking.com">
-      </a>
-      <a href="https://www.expedia.com" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Expedia_Logo_2021.svg" alt="Expedia">
-      </a>
-      <a href="https://www.agoda.com" target="_blank">
-        <img src="https://seeklogo.com/images/A/agoda-logo-3690E5CE0B-seeklogo.com.png" alt="Agoda">
-      </a>
-      <a href="https://www.trivago.com" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Trivago_logo_2018.svg" alt="Trivago">
-      </a>
-      <a href="https://www.hotels.com" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Hotels.com_logo.svg" alt="Hotels.com">
-      </a>
-    </div>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact">
+  <!-- Contact Section -->
+  <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: support@hotelbliss.com</p>
-    <p>Phone: +91-9876543210</p>
-    <p>Address: 123 Beachside Avenue, Goa, India</p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <p><strong>Email:</strong> contact@hotelbliss.com</p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <p><strong>Address:</strong> MG Road, New Delhi, India</p>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2025 Hotel Bliss. All rights reserved.</p>
-    <p>Developed by Mohd Saqib Ansari</p>
-  </footer>
-
+  <!-- Watson Chat Widget -->
+  <div id="watson-chat"></div>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "34912a6e-680b-448f-9ede-295faadcab16",
+      region: "au-syd",
+      serviceInstanceID: "bb623ba1-6d86-48b7-b30a-f04f5b53bc34",
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+        (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+        "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
 </body>
 </html>

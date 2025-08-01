@@ -5,75 +5,94 @@
   <title>Hotel Bliss</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Hero Section -->
   <header class="hero">
     <h1>Welcome to Hotel Bliss</h1>
     <p>Your comfort is our priority. Book your stay now!</p>
-    <a href="#booking" class="btn">Book Now</a>
+    <a href="#rooms" class="btn">Explore Rooms</a>
   </header>
 
+  <!-- Navigation -->
   <nav class="nav">
     <a href="#rooms">Rooms</a>
     <a href="#services">Services</a>
-    <a href="#partners">Partner Hotels</a>
     <a href="#contact">Contact</a>
   </nav>
 
+  <!-- Rooms Section -->
   <section id="rooms">
     <h2>Our Rooms</h2>
-    <div class="room-card">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/10/07/hotel-room-1867769_1280.jpg" alt="Deluxe Room" width="300">
-      <h3>Deluxe Room</h3>
-    </div>
-    <div class="room-card">
-      <img src="https://cdn.pixabay.com/photo/2016/10/13/09/06/bedroom-1737173_1280.jpg" alt="Suite" width="300">
-      <h3>Suite</h3>
-    </div>
-    <div class="room-card">
-      <img src="https://cdn.pixabay.com/photo/2019/05/31/23/57/hotel-room-4243630_1280.jpg" alt="Standard Room" width="300">
-      <h3>Standard Room</h3>
+    <div class="room-gallery">
+      <div class="room-card">
+        <img src="https://source.unsplash.com/300x200/?hotel,room" alt="Deluxe Room">
+        <h3>Deluxe Room</h3>
+      </div>
+      <div class="room-card">
+        <img src="https://source.unsplash.com/300x200/?suite" alt="Suite">
+        <h3>Suite</h3>
+      </div>
+      <div class="room-card">
+        <img src="https://source.unsplash.com/300x200/?bedroom" alt="Standard Room">
+        <h3>Standard Room</h3>
+      </div>
     </div>
   </section>
 
+  <!-- Partner Hotels Section -->
+  <section id="partner-hotels">
+    <h2>Our Partner Hotels</h2>
+    <div class="hotel-logos">
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2a/Taj_Hotels_logo.svg" alt="Taj Hotels">
+        <h3>Taj Hotels</h3>
+        <a href="https://www.tajhotels.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Marriott_International_logo.svg/2560px-Marriott_International_logo.svg.png" alt="Marriott">
+        <h3>Marriott</h3>
+        <a href="https://www.marriott.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Hyatt_logo.svg" alt="Hyatt">
+        <h3>Hyatt</h3>
+        <a href="https://www.hyatt.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Radisson_Hotel_Group_logo.svg" alt="Radisson">
+        <h3>Radisson</h3>
+        <a href="https://www.radissonhotels.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+      <div class="hotel-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/ITC_Hotels_logo.svg/2560px-ITC_Hotels_logo.svg.png" alt="ITC Hotels">
+        <h3>ITC Hotels</h3>
+        <a href="https://www.itchotels.com/" target="_blank" class="btn">Booking Info</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>24/7 Room Service</li>
-      <li>Free Wi-Fi</li>
-      <li>Airport Pickup</li>
+    <ul class="service-list">
+      <li>🛎️ 24/7 Room Service</li>
+      <li>📶 Free High-Speed Wi-Fi</li>
+      <li>🚖 Airport Pickup & Drop</li>
+      <li>🧺 Laundry Service</li>
+      <li>💆 Spa & Wellness Center</li>
     </ul>
   </section>
 
-    <section id="partners">
-  <h2>Our Partner Hotels</h2>
-
-  <div class="partner-card">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/32/Taj_Hotels_logo.svg/2560px-Taj_Hotels_logo.svg.png" alt="Taj Hotels">
-    <h3>Taj Hotels</h3>
-    <a href="https://www.tajhotels.com/" class="btn">Booking Info</a>
-  </div>
-
-  <div class="partner-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Marriott_International_logo.svg/1280px-Marriott_International_logo.svg.png" alt="Marriott">
-    <h3>Marriott</h3>
-    <a href="https://www.marriott.com/" class="btn">Booking Info</a>
-  </div>
-
-  <div class="partner-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Hyatt_logo.svg/1280px-Hyatt_logo.svg.png" alt="Hyatt">
-    <h3>Hyatt</h3>
-    <a href="https://www.hyatt.com/" class="btn">Booking Info</a>
-  </div>
-</section>
-
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email: contact@hotelbliss.com</p>
-    <p>Phone: +91 9876543210</p>
+    <p><strong>Email:</strong> contact@hotelbliss.com</p>
+    <p><strong>Phone:</strong> +91 9876543210</p>
+    <p><strong>Address:</strong> MG Road, New Delhi, India</p>
   </section>
 
+  <!-- Watson Chat Widget -->
   <div id="watson-chat"></div>
   <script>
     window.watsonAssistantChatOptions = {
@@ -83,9 +102,9 @@
       onLoad: async (instance) => { await instance.render(); }
     };
     setTimeout(function(){
-      const t = document.createElement('script');
-      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
-        (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+        (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
         "/WatsonAssistantChatEntry.js";
       document.head.appendChild(t);
     });

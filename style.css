@@ -171,22 +171,29 @@ nav ul li a:hover {
 }
 
 /* PARTNER HOTELS */
+
 .partners {
-  padding: 40px 20px;
-  background: #fff;
+  padding: 2rem;
+  background-color: #f8f8f8;
   text-align: center;
 }
 
 .partners-grid {
   display: flex;
   justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 30px;
+  margin-top: 1rem;
 }
 
 .partners-grid img {
-  height: 80px;
-  object-fit: contain;
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.partners-grid img:hover {
+  transform: scale(1.05);
 }
 
 /* CONTACT SECTION */

@@ -8,232 +8,219 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   color: #333;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero {
-  background: url('https://source.unsplash.com/1600x600/?hotel,resort') center/cover no-repeat;
+  background: url('https://source.unsplash.com/1600x600/?luxury-hotel,resort') no-repeat center center/cover;
   height: 100vh;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 50px;
+  padding: 2rem;
   text-align: center;
   color: white;
+}
+
+.hotel-name {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .cta-btn {
-  display: inline-block;
-  margin-top: 15px;
-  background: #007BFF;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff6600;
   color: white;
-  padding: 10px 20px;
+  border: none;
   text-decoration: none;
-  border-radius: 25px;
-  transition: background 0.3s ease;
+  font-size: 1.1rem;
+  border-radius: 5px;
 }
 
-.cta-btn:hover {
-  background: #0056b3;
-}
-
-/* NAVIGATION */
+/* Navigation */
 nav {
-  background: #003366;
-  padding: 10px 0;
-  text-align: center;
+  background-color: #333;
+  padding: 1rem 0;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 2rem;
+  list-style: none;
 }
 
-nav ul li a {
+nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+nav a:hover {
+  color: #ff6600;
 }
 
-/* SEARCH BAR */
+/* Search Form */
 .search-form {
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
 }
 
 .search-form input {
-  padding: 8px;
-  width: 200px;
+  padding: 0.5rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
 }
 
 .search-form button {
-  padding: 8px 12px;
-  background: #007BFF;
-  color: white;
+  padding: 0.5rem 1rem;
   border: none;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 0 4px 4px 0;
   cursor: pointer;
 }
 
-.search-form button:hover {
-  background: #0056b3;
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-/* ROOMS SECTION */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Rooms */
 .rooms {
-  padding: 40px 20px;
-  background: white;
-  text-align: center;
+  background-color: #fff;
 }
 
 .room-card {
   display: inline-block;
-  margin: 20px;
-  background: #fafafa;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 300px;
+  margin: 1rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .room-card img {
-  width: 300px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 5px;
 }
 
-/* SERVICES SECTION */
-.services {
-  background: #f0f8ff;
-  padding: 40px 20px;
-  text-align: center;
+.room-card h3 {
+  padding: 1rem;
 }
 
+/* Services */
 .service-list {
   display: flex;
   justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
 .service {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: #fff;
+  padding: 1.5rem;
   width: 250px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
 }
 
-/* BOOKING FORM */
-.booking-form {
-  background: white;
-  padding: 40px 20px;
-  text-align: center;
-}
-
+/* Booking Form */
 .booking-form form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: auto;
-  gap: 15px;
+  margin: 0 auto;
+  gap: 1rem;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form button {
-  padding: 10px;
-  font-size: 1em;
+  padding: 0.75rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .booking-form button {
-  background: #28a745;
+  background-color: #ff6600;
   color: white;
   border: none;
+  cursor: pointer;
 }
 
-.booking-form button:hover {
-  background: #1e7e34;
-}
-
-/* PARTNER HOTELS */
-.partners {
-  padding: 2rem;
-  background-color: #f8f8f8;
-  text-align: center;
-}
-
+/* Partners Section */
 .partners-grid {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  align-items: center;
 }
 
 .partners-grid img {
-  max-width: 150px;
+  width: 150px;
   height: auto;
-  transition: transform 0.3s ease;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.partners-grid img:hover {
-  transform: scale(1.05);
-}
-
-
-/* CONTACT SECTION */
-.contact {
-  padding: 40px 20px;
-  background: #f9f9f9;
-  text-align: center;
-}
-
+/* Contact Section */
 .contact form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-  margin: 20px auto;
-  gap: 10px;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
 }
 
 .contact input,
-.contact textarea,
-.contact button {
-  padding: 10px;
-  font-size: 1em;
-  border: 1px solid #bbb;
+.contact textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
   border-radius: 5px;
 }
 
 .contact button {
-  background: #007BFF;
+  padding: 0.75rem;
+  background-color: #ff6600;
   color: white;
   border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.contact button:hover {
-  background: #0056b3;
-}
-
-/* FOOTER */
+/* Footer */
 .footer {
-  background: #003366;
+  background-color: #333;
   color: white;
-  padding: 20px;
+  padding: 1rem;
   text-align: center;
 }

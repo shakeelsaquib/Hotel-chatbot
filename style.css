@@ -1,33 +1,52 @@
+/* General Reset and Font */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
+/* Header */
 .hero {
-  background: url('https://via.placeholder.com/1600x400') center/cover no-repeat;
+  background-color: #2c3e50;
   color: white;
+  padding: 60px 20px;
   text-align: center;
-  padding: 100px 20px;
-  background-color: #333;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #ff5722;
+  background-color: #ff5722;
   color: white;
+  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 15px;
 }
 
+.btn:hover {
+  background-color: #e64a19;
+}
+
+/* Navbar */
 .nav {
-  background: #222;
+  background-color: #1a1a1a;
   display: flex;
   justify-content: center;
   gap: 30px;
   padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav a {
@@ -36,89 +55,107 @@ body {
   font-weight: bold;
 }
 
-section {
-  padding: 60px 20px;
-  background: #f9f9f9;
+.nav a:hover {
+  color: #ff5722;
 }
 
-.room-list {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+/* Section titles */
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin: 40px 0 20px;
 }
 
-.room-gallery {
+/* Room Cards */
+#rooms {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 20px 40px;
 }
 
 .room-card {
   background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 320px;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
 
 .room-card img {
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  border-radius: 12px;
+  height: auto;
 }
 
-.service-list {
+.room-card h3 {
+  margin-top: 15px;
+}
+
+/* Services */
+#services {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#services ul {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 
-.service-list li {
-  font-size: 18px;
+#services li {
+  font-size: 1.2em;
   margin: 10px 0;
 }
 
 /* Partner Hotels */
-#partner-hotels {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.hotel-logos {
+#partners {
+  padding: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-top: 30px;
-}
-
-.hotel-card {
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 220px;
-  padding: 20px;
   text-align: center;
 }
 
-.hotel-card img {
+.partner-card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 220px;
+}
+
+.partner-card img {
   width: 100%;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 15px;
+  max-width: 160px;
+  margin-bottom: 10px;
 }
 
-.hotel-card .btn {
-  margin-top: 10px;
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #ff5722;
+.partner-card h3 {
+  margin: 10px 0;
+}
+
+/* Contact */
+#contact {
+  background-color: #222;
   color: white;
-  border-radius: 4px;
-  text-decoration: none;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.hotel-card .btn:hover {
-  background-color: #e14b1c;
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #rooms, #partners {
+    flex-direction: column;
+    align-items: center;
+  }
 }

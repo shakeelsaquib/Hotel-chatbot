@@ -24,18 +24,21 @@
   <!-- Rooms Section -->
   <section id="rooms">
     <h2>Our Rooms</h2>
-    <div class="room-gallery">
+    <div class="room-gallery room-cards">
       <div class="room-card">
         <img src="https://source.unsplash.com/300x200/?luxury-hotel-room" alt="Deluxe Room">
         <h3>Deluxe Room</h3>
+        <p>Spacious room with king-size bed, Wi-Fi, AC and breakfast. ₹3,000/night</p>
       </div>
       <div class="room-card">
         <img src="https://source.unsplash.com/300x200/?hotel-suite" alt="Suite">
         <h3>Suite</h3>
+        <p>Premium suite with living area, bathtub, balcony, and luxury amenities. ₹5,000/night</p>
       </div>
       <div class="room-card">
         <img src="https://source.unsplash.com/300x200/?hotel-bed" alt="Standard Room">
         <h3>Standard Room</h3>
+        <p>Comfortable room with essential amenities. ₹1,800/night</p>
       </div>
     </div>
   </section>
@@ -101,11 +104,11 @@
       serviceInstanceID: "bb623ba1-6d86-48b7-b30a-f04f5b53bc34",
       onLoad: async (instance) => { await instance.render(); }
     };
-    setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
-        (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
-        "/WatsonAssistantChatEntry.js";
+    setTimeout(function() {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + 
+              (window.watsonAssistantChatOptions.clientVersion || 'latest') + 
+              "/WatsonAssistantChatEntry.js";
       document.head.appendChild(t);
     });
   </script>

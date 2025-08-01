@@ -14,6 +14,12 @@
       <h1 class="hotel-name">Hotel Bliss</h1>
       <p class="tagline">Luxury, comfort, and unforgettable experiences await you.</p>
       <a href="#rooms" class="cta-btn">Explore Rooms</a>
+
+      <!-- SEARCH FORM -->
+      <form class="search-form" action="#rooms">
+        <input type="text" placeholder="Search room type..." />
+        <button type="submit">Search</button>
+      </form>
     </div>
   </section>
 
@@ -22,6 +28,7 @@
     <ul>
       <li><a href="#rooms">Rooms</a></li>
       <li><a href="#amenities">Amenities</a></li>
+      <li><a href="#booking">Booking</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -43,7 +50,25 @@
     </div>
   </section>
 
-  <!-- PARTNER COMPANIES SECTION -->
+  <!-- BOOKING FORM -->
+  <section id="booking" class="booking-form">
+    <h2>Book Your Stay</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="date" placeholder="Check-in" required />
+      <input type="date" placeholder="Check-out" required />
+      <select required>
+        <option value="">Select Room Type</option>
+        <option value="deluxe">Deluxe Room</option>
+        <option value="luxury">Luxury Suite</option>
+        <option value="presidential">Presidential Suite</option>
+      </select>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <!-- PARTNER COMPANIES -->
   <section class="partners">
     <h2>Book from Trusted Partners</h2>
     <div class="partners-grid">
@@ -64,6 +89,12 @@
       </a>
     </div>
   </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Hotel Bliss. All rights reserved.</p>
+    <p>Developed by Mohd Saqib Ansari</p>
+  </footer>
 
 </body>
 </html>

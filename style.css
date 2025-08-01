@@ -1,124 +1,50 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-.hero {
-  background: url('https://via.placeholder.com/1600x400') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
-  background-color: #333;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: #ff5722;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.nav {
-  background: #222;
+/* ROOMS */
+.room-container {
   display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 15px;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-section {
-  padding: 60px 20px;
-  background: #f9f9f9;
-}
-
-.room-list {
-  display: flex;
-  gap: 20px;
+  justify-content: space-around;
   flex-wrap: wrap;
-}
-
-.room-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  margin: 30px 0;
 }
 
 .room-card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 10px;
+  width: 250px;
+  transition: transform 0.3s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-5px);
 }
 
 .room-card img {
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.service-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.service-list li {
-  font-size: 18px;
-  margin: 10px 0;
-}
-
-/* Partner Hotels */
-#partner-hotels {
-  padding: 60px 20px;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.hotel-logos {
+/* PARTNER HOTELS */
+.partner-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-  margin-top: 30px;
+  padding: 40px 0;
 }
 
-.hotel-card {
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 220px;
-  padding: 20px;
-  text-align: center;
-}
-
-.hotel-card img {
-  width: 100%;
+.partner-logo img {
   height: 80px;
   object-fit: contain;
-  margin-bottom: 15px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
 
-.hotel-card .btn {
-  margin-top: 10px;
-  display: inline-block;
-  padding: 8px 16px;
-  background-color: #ff5722;
-  color: white;
-  border-radius: 4px;
-  text-decoration: none;
-}
-
-.hotel-card .btn:hover {
-  background-color: #e14b1c;
+.partner-logo img:hover {
+  filter: grayscale(0%);
 }

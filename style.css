@@ -1,53 +1,73 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f7f7f7;
-  color: #333;
-  text-align: center;
 }
 
 .hero {
-  background: linear-gradient(to right, #0066cc, #00ccff);
+  background: url('https://via.placeholder.com/1600x400') center/cover no-repeat;
   color: white;
-  padding: 3rem;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #333;
 }
 
 .btn {
-  background: white;
-  color: #0066cc;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 1rem;
   display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background: #ff5722;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
 .nav {
-  background: #fff;
-  padding: 1rem;
+  background: #222;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  border-bottom: 1px solid #ddd;
+  gap: 30px;
+  padding: 15px;
 }
 
 .nav a {
+  color: white;
   text-decoration: none;
-  color: #0066cc;
   font-weight: bold;
 }
 
 section {
-  padding: 2rem;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.room-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .room-card {
-  background: #fff;
-  margin: 1rem auto;
-  padding: 1rem;
+  width: 300px;
+  background: white;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 400px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+
+.room-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.service-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service-list li {
+  font-size: 18px;
+  margin: 10px 0;
 }

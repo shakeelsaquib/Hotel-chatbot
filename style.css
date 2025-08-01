@@ -71,3 +71,23 @@ section {
   font-size: 18px;
   margin: 10px 0;
 }
+.room-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.room-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+}
+
+.room-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
